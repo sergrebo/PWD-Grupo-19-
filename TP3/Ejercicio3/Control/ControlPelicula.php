@@ -38,7 +38,7 @@ class ControlPelicula {
             'nacionalidad' => '',
             'genero' => '',
             'duracion' => '',
-            'edadPermitida' => '',
+            'restricciones' => '',
             'sinopsis' => '',
             'imagen' => ''
         ];
