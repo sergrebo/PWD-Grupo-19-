@@ -13,7 +13,7 @@
                         <li class="nav-item mb-2 opacity-75">Antinao Nicolas</li>
                         <li class="nav-item mb-2 opacity-75">Rebolledo Sergio</li>
                         <li class="nav-item mb-2 opacity-75">Payllalef Alfredo</li>
-                        <li class="nav-item mb-2 opacity-75">Enzo</li>
+                        <li class="nav-item mb-2 opacity-75">Enzo Riverti</li>
                     </ul>
                 </div>
 
