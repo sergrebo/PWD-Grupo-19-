@@ -10,7 +10,7 @@ $arregloDetalle = $objControlador->mostrarDetallePelicula($metodo);
 ?>
 
 <!DOCTYPE html>
-<html lang="es-AR">
+<html lang="es">
 
 <head>
     <meta charset="utf-8" />
