@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,33 +12,46 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Form Saludo</title>
 </head>
-
+-->
+<?php
+include_once '../../../../estructura/cabecera-retorno.php';
+?>
 
 
 <body>
-    <form action="Action/action-ej8.php" method="post" class="needs-validation" id="formulario" novalidate>
+    <div class="container">
+        <form action="Action/action-ej8.php" method="post" class="needs-validation" id="formulario" novalidate>
 
-        <div class="mb-3 mx-3">
-            <label for="validationCustom01" class="form-label">Edad</label>
-            <input type="text" name="edad" id="validationCustom01" class="form-control" required>
-        </div> 
+            <div class="mb-3 mx-3">
+                <label for="validationCustom01" class="form-label">Edad</label>
+                <input type="text" name="edad" id="validationCustom01" class="form-control" required>
+            </div>
 
-        <div class="mb-3 mx-3">
+            <div class="mb-3 mx-3">
 
-            <h3>Es estudiante?</h3>
-            
-                <label for="validationCustom02">NO
-                <input type="radio" value="NO" name="estudiante" id="validationCustom02" class="form-check-input"></label>
-            
-                <label for="validationCustom03">SI
-                <input type="radio" value="SI" name="estudiante" id="validationCustom03" class="form-check-input"></label>
-            
+                <h3>Es estudiante?</h3>
 
-        </div>
-        <div class="mx-3">
-            <input type="submit" class="btn btn-primary">
-        </div>
-    </form>
+                <label for="validationCustom02" class="form-label">NO</label>
+                    <input type="radio" value="NO" name="estudiante" id="validationCustom02" class="form-check-input">
+
+                <label for="validationCustom03" class="form-label">SI</label>
+                    <input type="radio" value="SI" name="estudiante" id="validationCustom03" class="form-check-input">
+
+
+            </div>
+            <div class="mx-3">
+                <input type="submit" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+
+
+
     <script src="Assets/validation.js"></script>
+
+    <?php
+    include_once '../../../../estructura/pie.php';
+    ?>
+    <!--
 </body>
 </html>

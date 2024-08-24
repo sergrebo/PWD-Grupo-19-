@@ -1,3 +1,5 @@
+<!--
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,65 +13,82 @@
     <title>Form Saludo</title>
 </head>
 
+-->
+
+<?php
+include_once '../../../../estructura/cabecera-retorno.php';
+?>
+
 <body>
+        <div class="container mb-3">
+                <h1 class="mx-3">Fomulario con jQuery y Bootstrap</h1>
+                <form action="Action/action-ej6.php" method="post" id="formulario" class="row g-3 needs-validation mx-3" novalidate>
+                        <div class="col-md-4 mb-3">
+                                <label for="validationCustom01" class="form-label">Nombre</label>
+                                <input type="text" name="nombre" class="form-control" id="validationCustom01" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                                <label for="validationCustom02">Apellido</label>
+                                <input type="text" name="apellido" class="form-control" id="validationCustom02" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                                <label for="validationCustom03">Edad</label>
+                                <input type="text" name="edad" class="form-control" id="validationCustom03" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                                <label for="validationCustom04">Direccion</label>
+                                <input type="text" name="direccion" class="form-control" id="validationCustom04" required>
+                        </div>
 
-<h1 class="mx-3">Fomulario con jQuery y Bootstrap</h1>
-<div class="container mb-3"></div>
-    <form action="Action/action-ej6.php" method="post" id="formulario" class="row g-3 needs-validation mx-3" novalidate>
-<div class="col-md-4 mb-3">
-        <label for="validationCustom01" class="form-label">Nombre</label> 
-        <input type="text" name="nombre" class="form-control" id="validationCustom01" required>
-</div>
-<div class="col-md-4 mb-3">
-        <label for="validationCustom02">Apellido</label>
-        <input type="text" name="apellido" class="form-control" id="validationCustom02" required>
-</div> 
-<div class="col-md-4 mb-3">
-        <label for="validationCustom03">Edad</label>
-        <input type="text" name="edad" class="form-control" id="validationCustom03" required>
-</div> 
-<div class="col-md-4 mb-3">
-        <label for="validationCustom04">Direccion</label>
-        <input type="text" name="direccion" class="form-control" id="validationCustom04" required>
-</div>
-<div>
-        <div class="mb-3 ">
-                <h3>Nivel de Estudios</h3>
-                <label for="nivel">No tiene
-                <input type="radio" class="form-check-input" value="No tiene estudios" name="opcion" required></label>
 
-                <label for="">Primarios
-                <input type="radio" class="form-check-input" value="Estudios primarios" name="opcion" required></label>
 
-                <label for="">Secundarios
-                <input type="radio" class="form-check-input" value="Estudios Secundiarios" name="opcion" required></label>
+                        <div class="mb-3 ">
+                                <h3>Nivel de Estudios</h3>
+                                <label for="nivel">No tiene</label>
+                                <input type="radio" class="form-check-input" value="No tiene estudios" name="opcion" required>
+
+                                <label for="">Primarios</label>
+                                <input type="radio" class="form-check-input" value="Estudios primarios" name="opcion" required>
+
+                                <label for="">Secundarios</label>
+                                <input type="radio" class="form-check-input" value="Estudios Secundiarios" name="opcion" required>
+                        </div>
+                        <div class="mb-3">
+                                <select class="form-select" name="genero" id="genero" required>
+                                        <option value="" disabled selected>Selecciona un Genero</option>
+                                        <option value="Masculino">Masculino</option>
+                                        <option value="Femenino">Femenino</option>
+                                        <option value="Otrx">Otrx</option>
+                                </select>
+                        </div>
+
+
+                        <div class="mb-3">
+                                <h3>Que deportes practicas?</h3>
+                                <label for="">Futbol</label>
+                                <input class="form-check-input" type="checkbox" value="Futbol" name="deporte">
+
+                                <label for="">Basket</label>
+                                <input class="form-check-input" type="checkbox" value="Basket" name="deporte">
+
+                                <label for="">Tennis</label>
+                                <input class="form-check-input" type="checkbox" value="Tennis" name="deporte">
+
+                                <label for="">Voley</label>
+                                <input class="form-check-input" type="checkbox" value="Voley" name="deporte">
+
+                        </div>
+                        <input class="btn btn-primary" type="submit">
+
+                </form>
         </div>
-        <div class="mb-3"> 
-                <select class="form-select" name="genero" id="genero" required>
-                        <option value="" disabled selected>Selecciona un Genero</option>
-                        <option value="Masculino">Masculino</option>
-                        <option value="Femenino">Femenino</option>
-                        <option value="Otrx">Otrx</option>
-                </select>
-        </div>
-        <h3>Que deportes practicas?</h3>
-        <div class="mb-3">        
-                <label for="" >Futbol
-                        <input class="form-check-input" type="checkbox" value="Futbol" name="deporte">
-                </label>
-                <label for="">Basket
-                        <input class="form-check-input" type="checkbox" value="Basket" name="deporte">
-                </label>
-                <label for="">Tennis
-                        <input class="form-check-input" type="checkbox" value="Tennis" name="deporte">
-                </label>
-                <label for="">Voley
-                        <input class="form-check-input" type="checkbox" value="Voley" name="deporte">
-                </label>
-        </div>
-        <input class="btn btn-primary" type="submit">
-    </div>
-    </form>
-    <script src="Assets/validation.js"></script>
+        <script src="Assets/validation.js"></script>
+
+        <?php
+        include_once '../../../../estructura/pie.php';
+        ?>
+
+        <!--
 </body>
+
 </html>

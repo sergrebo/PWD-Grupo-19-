@@ -8,7 +8,7 @@ $objControlador = new ControlPelicula();
 $arregloDetalle = $objControlador->mostrarDetallePelicula($metodo);
 
 ?>
-
+<!--
 <!DOCTYPE html>
 <html lang="es">
 
@@ -19,6 +19,12 @@ $arregloDetalle = $objControlador->mostrarDetallePelicula($metodo);
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 </head>
+-->
+
+<?php
+include_once '../../../../estructura/cabecera-retorno.php';
+?>
+
 
 <body>
 
@@ -46,7 +52,13 @@ $arregloDetalle = $objControlador->mostrarDetallePelicula($metodo);
         </div>
     </div>
 
-    <!-- Bootstrap JS (including Popper) -->
+
+
+    <?php
+    include_once '../../../../estructura/pie.php';
+    ?>
+
+    <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
         </script>
@@ -58,3 +70,4 @@ $arregloDetalle = $objControlador->mostrarDetallePelicula($metodo);
 </body>
 
 </html>
+-->

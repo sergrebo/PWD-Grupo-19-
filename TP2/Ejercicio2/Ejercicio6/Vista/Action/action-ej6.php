@@ -5,11 +5,14 @@ include_once '../../Control/Utils/funciones.php';
 
 
 
-    $datos = darDatosSubmitted($_POST);
-    $obj = new Persona();
-    $saludo = $obj-> saludo($datos);
+$datos = darDatosSubmitted($_POST);
+$obj = new Persona();
+$saludo = $obj->saludo($datos);
 
 ?>
+
+<!--
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +20,21 @@ include_once '../../Control/Utils/funciones.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saludo</title>
 </head>
+
+-->
+<?php
+include_once '../../../../../estructura/cabecera-retorno.php';
+?>
+
 <body>
-    <?php echo $saludo; ?> 
+    <div class="container">
+        <?php echo $saludo; ?>
+    </div>
+
+    <?php
+    include_once '../../../../../estructura/pie.php';
+    ?>
+
+    <!--
 </body>
 </html> 

@@ -9,6 +9,8 @@ include_once '../../Control/Utils/funciones.php';
     $valorEntrada = $obj-> ValorEntrada($datos);
 
 ?>
+
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,8 +18,20 @@ include_once '../../Control/Utils/funciones.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valor de la Entrada</title>
 </head>
+-->
+<?php
+include_once '../../../../../estructura/cabecera-retorno.php';
+?>
+
 <body>
-    <?php echo "$" . $valorEntrada; ?>
-    <a href="../index.php">Volver</a>
+    <div class="container">
+        <?php echo "$" . $valorEntrada; ?>
+    <a href="../ejercicio8.php">Volver</a>
+    </div>
+    
+    <?php
+    include_once '../../../../../estructura/pie.php';
+    ?>
+    <!--
 </body>
 </html> 
