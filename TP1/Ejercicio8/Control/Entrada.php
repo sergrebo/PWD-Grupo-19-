@@ -11,10 +11,9 @@ class Entrada{
 
         if($this->validarEnteroPositivo($edad)){
             if($estudios == "SI" || $edad < 12 ){
-                $valorEntrada = 160;
-            }elseif($estudios == "SI" && $edad >= 12){
-                $valorEntrada = 180;
-            }else{
+                $valorEntrada = $edad < 12 ? 160 : 180;
+            }
+            else{
                 $valorEntrada = 300;
             }
            

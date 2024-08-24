@@ -4,20 +4,29 @@ include_once "../../Control/Entrada.php";
 include_once '../../Control/Utils/funciones.php';
 
 
-    $datos = darDatosSubmitted($_POST);
+    $datos = darDatosSubmitted();
     $obj = new Entrada();
-    $valorEntrada = $obj-> ValorEntrada($datos);
+    $valorEntrada = $obj->ValorEntrada($datos);
 
 ?>
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valor de la Entrada</title>
 </head>
-<body>
-    <?php echo "$" . $valorEntrada; ?>
-    <a href="../index.php">Volver</a>
-</body>
-</html> 
+<body> -->
+<?php
+    include_once '../../../../estructura/cabecera-retorno.php';
+?>
+    <div class="container mt-4">
+        <h1>Resultado</h1>
+        <p><?php echo "$" . $valorEntrada; ?></p>
+        <a href="../ejercicio8.php">Volver</a>
+    </div> 
+<!-- </body>
+</html>  -->
+<?php
+    include_once '../../../../estructura/pie.php';
+?>

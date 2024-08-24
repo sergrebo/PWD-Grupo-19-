@@ -12,7 +12,7 @@ class Persona{
         $direccion = $datos["direccion"];
         $genero = $datos["genero"];
         $estudios = $datos["opcion"];
-        $deportes = $datos["deporte"];
+        $deportes = isset($datos["deporte"]) ? $datos["deporte"] : [];
 
         $cantDeportes = count($deportes);
 
