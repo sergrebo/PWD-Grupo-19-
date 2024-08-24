@@ -41,7 +41,7 @@ $arregloDetalle = $objControlador->mostrarDetallePelicula($metodo);
                 <p class="lead text-success"><span class="fw-bold">Edad Permitida: </span><?php echo $arregloDetalle['restricciones']; ?></p>
                 <p class="lead text-success"><span class="fw-bold">Sinopsis: </span><?php echo $arregloDetalle['sinopsis']; ?></p>
                 <!-- <img src="./Img/Badge-Portfólio.png" alt=""> -->
-                <img class="rounded mx-auto d-block w-25" src="./Img/<?php echo $arregloDetalle['imagen']; ?>" alt="Imagen de la película">
+                <img class="rounded mx-auto d-block w-25" src="../../Archivos/<?php echo $arregloDetalle['imagen']; ?>" alt="Imagen de la película">
 
 
             </div>

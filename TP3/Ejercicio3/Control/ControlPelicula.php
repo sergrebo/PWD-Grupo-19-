@@ -3,7 +3,7 @@
 class ControlPelicula {
 
     private function subirImagen($datos) {
-        $dir = './Img/';
+        $dir = '../../Archivos/';
         $estadoImagen = "";
         $tipoPermitido = ['image/jpeg', 'image/png', 'image/gif'];
     
